@@ -1,3 +1,8 @@
+:root {
+    --display-font: 'Playfair Display', Georgia, serif;
+    --mono-font: 'Inconsolata', monospace;
+}
+
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -8,10 +13,20 @@ header {
     border-bottom: 1px solid transparent;
 }
 
+nav a {
+    font-family: var(--mono-font);
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: var(--mono-font);
+}
+
 footer {
     padding: 2rem 3rem;
     border-top: 1px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8rem;
 }
