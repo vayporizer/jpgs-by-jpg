@@ -35,6 +35,57 @@ nav a:hover {
     color: var(--accent-color);
 }
 
+#hero {
+    min-height: 100vh; /* uses full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem 5rem;
+    position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  inset:    0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201, 169, 110, 0.07) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 80% at 20% 80%, rgba(201, 169, 110, 0.04) 0%, transparent 60%);
+}
+
+.hero-wm {
+    position: absolute;
+    margin-top: -50px;
+    height: 80vh;
+    top: 0%;
+    opacity: 10%;
+    right: 0;
+}
+
+h1 { 
+    font-family: var(--display-font);
+    font-size: clamp(3.5rem, 9vw, 8rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: white;
+    opacity: 100 ;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-family: var(--mono-font);
+    font-size: 0.80rem;
+    color: var(--accent-color);
+    letter-spacing: 0.25em;
+    margin-bottom: 0;
+}
+
+p {
+    color: var(--muted-color);
+    margin-top: 0;
+}
+
 body {
     background-color: var(--bg-color);
     font-family: var(--mono-font);
