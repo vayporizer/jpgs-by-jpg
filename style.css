@@ -73,12 +73,20 @@ h1 {
     margin-bottom: 40px;
 }
 
+h2 {
+    font-family: var(--display-font);
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    margin-bottom: 5%;
+}
+
 h3 {
     font-family: var(--mono-font);
     font-size: 0.90rem;
-    color: var(--accent-color);
+    color: var(--muted-color);
     letter-spacing: 0.25em;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -92,6 +100,7 @@ h4 {
 p {
     color: var(--muted-color);
     margin-top: 0;
+    line-height: 150%;
 }
 
 body {
@@ -102,6 +111,7 @@ body {
 
 #portfolio {
     padding: 0 3rem 5rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .gallery {
@@ -131,6 +141,27 @@ body {
 .img-placeholder {
     width: 100%;
     display: block;
+}
+
+#about {
+    padding: 5rem 3rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-header {
+  font-size: 3rem;
+}
+
+.about-name {
+  font-style: italic;
+  display: inline-block;
+}
+
+.about-name::first-letter {
+  color: #c9a96e;
 }
 
 footer {
