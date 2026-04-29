@@ -83,10 +83,9 @@ h2 {
 h3 {
     font-family: var(--mono-font);
     font-size: 0.90rem;
-    color: var(--muted-color);
+    color: var(--accent-color);
     letter-spacing: 0.25em;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin-top: 50px;;
 }
 
 h4 {
