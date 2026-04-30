@@ -182,7 +182,7 @@ body {
 }
 
 .event-meta {
-  font-size:      0.8rem;
+  font-size:      0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color:          var(--accent-color);
