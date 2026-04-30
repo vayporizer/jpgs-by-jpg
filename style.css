@@ -17,6 +17,8 @@ header {
     justify-content: space-between;
     padding: 1.4rem 3rem;
     border-bottom: 1px solid transparent;
+    transition:border-color 0.3s, background 0.3s;
+    animation: fadeUp 0.8s 0.2s ease both;
 }
 
 nav {
@@ -42,6 +44,7 @@ nav a:hover {
     justify-content: center;
     padding: 0 3rem 5rem;
     position: relative;
+    animation: fadeUp 0.8s 0.2s ease both;
 }
 
 .hero-bg {
@@ -85,7 +88,7 @@ h3 {
     font-size: 0.90rem;
     color: var(--accent-color);
     letter-spacing: 0.25em;
-    margin-top: 50px;;
+    margin-top: 50px;
 }
 
 h4 {
@@ -236,4 +239,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-size: 0.7rem;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
