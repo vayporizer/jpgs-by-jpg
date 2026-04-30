@@ -119,7 +119,7 @@ body {
 }
 
 .event-group {
-    break-inside: avoid;
+    display: contents;
 }
 
 .event-card {
@@ -129,6 +129,7 @@ body {
     margin-bottom: 1.2rem;
     background: var(--surface);
     border: 1px solid var(--border);
+    break-inside: avoid;
 }
 
 .event-card img {
