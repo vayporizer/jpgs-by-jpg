@@ -237,6 +237,60 @@ body {
   color: #c9a96e;
 }
 
+#contact {
+  padding: 5rem 3rem 5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+#contact h2 {
+  color: var(--accent-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.socmed-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socmed {
+  display: flex;
+  flex: 1;
+  max-width: 250px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: border-color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+
+.socmed:hover {
+  border-color: var(--accent-color);
+  background: rgba(201, 169, 110, 0.06);
+}
+
+.socmed-label {
+  font-family: var(--mono-font);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-color);
+}
+
+.socmed-handle {
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  color: var(--text-color);
+  align-items: center;
+}
+
 footer {
     padding: 2rem 3rem;
     border-top: 1px solid var(--border-color);
