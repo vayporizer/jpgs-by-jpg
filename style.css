@@ -122,6 +122,33 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+#filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 3.5rem;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--muted-color);
+  font-family: var(--mono-font);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: rgba(201, 169, 110, 0.06);
+}
+
 .gallery {
     columns: 3;
     column-gap: 1.2rem;
@@ -129,6 +156,10 @@ body {
 
 .event-group {
     display: contents;
+}
+
+.event-group.hidden {
+  display: none;
 }
 
 .event-card {
