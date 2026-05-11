@@ -136,7 +136,6 @@ body {
     overflow: hidden;
     border-radius: 3px;
     margin-bottom: 1.2rem;
-    background: var(--surface);
     border: 1px solid var(--border);
     break-inside: avoid;
 }
@@ -226,6 +225,8 @@ body {
 
 .about-header {
   font-size: 3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .about-name {
@@ -235,6 +236,10 @@ body {
 
 .about-name::first-letter {
   color: #c9a96e;
+}
+
+#about h4 {
+    margin-top: 1.2rem;
 }
 
 .org-experience-list { 
