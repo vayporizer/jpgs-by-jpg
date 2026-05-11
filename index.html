@@ -396,17 +396,17 @@
     </section>
 
     <section id="contact">
-        <h2>Let's work together! </h2>
+        <h2> Let's work together! </h2>
         <div class="socmed-list">
-            <a class="socmed" href="https://instagram.com/jpgsbyjpg" target="_blank">
-            <span class="socmed-label">INSTAGRAM</span>
-            <span class="socmed-handle">@jpgsbyjpg</span>
-            </a>
+            <button class="socmed" onclick="window.open('https://instagram.com/jpgsbyjpg', '_blank')">
+                <span class="socmed-label">INSTAGRAM</span>
+                <span class="socmed-handle">@jpgsbyjpg</span>
+            </button>
 
-            <a class="socmed" target=”_blank”>
-            <span class="socmed-label">EMAIL</span>
-            <span class="socmed-handle">paogines.photos@gmail.com</span>
-            </a>
+            <button class="socmed" id="copy-email">
+                <span class="socmed-label"> EMAIL </span>
+                <span class="socmed-handle" id="email-handle"> paogines.photos@gmail.com </span>
+            </button>
         </div>
     </section>
 
@@ -415,6 +415,8 @@
         <span> All rights reserved. </span>
         <span> Logo by Zoe Salcedo </span>
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 </html>
