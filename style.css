@@ -237,6 +237,22 @@ body {
   color: #c9a96e;
 }
 
+.org-experience-list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.org-exp {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    color: var(--muted-color);
+}
+
 #contact {
   padding: 5rem 3rem 5rem;
   border-top: 1px solid var(--border-color);
