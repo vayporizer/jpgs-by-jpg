@@ -18,6 +18,46 @@ filterBtns.forEach(btn => {
   });
 });
 
+const lightbox = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lightbox-img');
+const lbName   = document.getElementById('lb-name');
+const lbMeta   = document.getElementById('lb-meta');
+const lbClose  = document.getElementById('lightbox-close');
+
+// Open lightbox when a card is clicked
+document.querySelectorAll('.event-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('img');
+    if (!img) return; // no real image yet — do nothing
+
+    lbImg.src  = img.src;
+    lbImg.alt  = img.alt;
+    lbName.textContent = card.dataset.name || '';
+    lbMeta.textContent = card.dataset.meta || '';
+
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent background scroll
+  });
+});
+
+// Close via the ✕ button
+lbClose.addEventListener('click', closeLightbox);
+
+// Close by clicking the dark backdrop (not the image itself)
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+// Close with the Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = ''; // restore scrolling
+}
+
 
 // Copy Email Functionality
 const copyEmail = document.getElementById('copy-email');
