@@ -9,6 +9,10 @@
   --mono-font: 'DM Mono', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER SECTION */
 header {
   position: fixed;
