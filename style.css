@@ -470,6 +470,7 @@ footer {
     max-width: 100%;
     object-fit: contain;
     pointer-events: none;
+    opacity: 70%;
   }
 }
 
