@@ -292,14 +292,19 @@ body {
 #about {
   padding: 5rem 3rem 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  grid-template-columns: max-content 1fr;
+  gap: 3rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-img-wrap {
   position: relative;
-  display: inline-block;
+  display: block;      
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .about-img-wrap img {
