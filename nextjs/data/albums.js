@@ -5,17 +5,28 @@ const albums = [
     date: "June 2026",
     location: "",
     category: "org-events",
-    cover: "/pictures/RecWeek 26 (1).jpg",
-    photos: [1, 2, 3, 4].map(n => `/pictures/RecWeek 26 (${n}).jpg`),
+    cover: "/pictures/RecWeek 26 (2).jpg",
+    coverPosition: "center",
+    hasAlbum: true,
+    photos: [
+      { src: "/pictures/RecWeek 26 (1).jpg" },
+      { src: "/pictures/RecWeek 26 (2).jpg" },
+      { src: "/pictures/RecWeek 26 (3).jpg" },
+      { src: "/pictures/RecWeek 26 (4).jpg" },
+    ],
   },
   {
     slug: "recweek-dp-shoots",
-    name: "RecWeek '26 DP Shoots",
+    name: "RecWeek 2026 DP Shoots",
     date: "August 2026",
     location: "",
     category: "portraits",
     cover: "/pictures/RecWeek DPs (3).jpg",
-    photos: ["/pictures/RecWeek DPs (3).jpg"],
+    coverPosition: "center",
+    hasAlbum: true,
+    photos: [
+      { src: "/pictures/RecWeek DPs (3).jpg" },
+    ],
   },
   {
     slug: "blue-rose-2026",
@@ -24,7 +35,14 @@ const albums = [
     location: "",
     category: "concerts",
     cover: "/pictures/Blue Rose 26 (8).jpg",
-    photos: [3, 5, 7, 8].map(n => `/pictures/Blue Rose 26 (${n}).jpg`),
+    coverPosition: "50% 20%",
+    hasAlbum: true,
+    photos: [
+      { src: "/pictures/Blue Rose 26 (3).jpg" },
+      { src: "/pictures/Blue Rose 26 (5).jpg" },
+      { src: "/pictures/Blue Rose 26 (7).jpg" },
+      { src: "/pictures/Blue Rose 26 (8).jpg" },
+    ],
   },
   {
     slug: "petrichor-single-launch",
@@ -33,11 +51,13 @@ const albums = [
     location: "",
     category: "concerts",
     cover: "/pictures/Petrichor (1).JPG",
+    coverPosition: "center",
+    hasAlbum: true,
     photos: [
-      "/pictures/Petrichor (1).JPG",
-      "/pictures/Petrichor (2).jpg",
-      "/pictures/Petrichor (8).JPG",
-      "/pictures/Petrichor (6).jpg",
+      { src: "/pictures/Petrichor (1).JPG" },
+      { src: "/pictures/Petrichor (2).jpg" },
+      { src: "/pictures/Petrichor (8).JPG" },
+      { src: "/pictures/Petrichor (6).jpg" },
     ],
   },
   {
@@ -46,10 +66,18 @@ const albums = [
     date: "January 2025",
     location: "",
     category: "events",
-    cover: "/pictures/Reese at 18 (1).JPG",
-    photos: [1, 3, 5, 6, 8, 9, 10].map(
-        n => `/pictures/Reese at 18 (${n}).JPG`
-    ),
+    cover: "/pictures/Reese at 18 (3).JPG",
+    coverPosition: "center",
+    hasAlbum: true,
+    photos: [
+      { src: "/pictures/Reese at 18 (1).JPG" },
+      { src: "/pictures/Reese at 18 (3).JPG" },
+      { src: "/pictures/Reese at 18 (5).JPG" },
+      { src: "/pictures/Reese at 18 (6).JPG" },
+      { src: "/pictures/Reese at 18 (8).JPG" },
+      { src: "/pictures/Reese at 18 (9).JPG" },
+      { src: "/pictures/Reese at 18 (10).JPG" },
+    ],
   },
   {
     slug: "coam-iosf",
@@ -58,8 +86,15 @@ const albums = [
     location: "",
     category: "sports",
     cover: "/pictures/COA-M IOSF (6).jpg",
-    photos: [6, 18, 32, 49].map(n => `/pictures/COA-M IOSF (${n}).jpg`)
-      .concat(["/pictures/COA-M IOSF (51).JPG"]),
+    coverPosition: "center",
+    hasAlbum: true,
+    photos: [
+      { src: "/pictures/COA-M IOSF (6).jpg" },
+      { src: "/pictures/COA-M IOSF (18).jpg" },
+      { src: "/pictures/COA-M IOSF (32).jpg" },
+      { src: "/pictures/COA-M IOSF (49).jpg" },
+      { src: "/pictures/COA-M IOSF (51).JPG" },
+    ],
   },
   {
     slug: "coam-leadcon",
@@ -68,7 +103,12 @@ const albums = [
     location: "",
     category: "org-events",
     cover: "/pictures/COA-M LEADcon (14).jpg",
-    photos: [14, 17].map(n => `/pictures/COA-M LEADcon (${n}).jpg`),
+    coverPosition: "center",
+    hasAlbum: false,
+    photos: [
+      { src: "/pictures/COA-M LEADcon (14).jpg" },
+      { src: "/pictures/COA-M LEADcon (17).jpg" },
+    ],
   },
   {
     slug: "coalentines",
@@ -77,7 +117,11 @@ const albums = [
     location: "",
     category: "org-events",
     cover: "/pictures/COAlentines-1.jpg",
-    photos: ["/pictures/COAlentines-1.jpg"],
+    coverPosition: "center",
+    hasAlbum: false,
+    photos: [
+      { src: "/pictures/COAlentines-1.jpg" },
+    ],
   },
   {
     slug: "panning-shots",
@@ -86,7 +130,11 @@ const albums = [
     location: "",
     category: "cars",
     cover: "/pictures/Panning (1).jpg",
-    photos: ["/pictures/Panning (1).jpg"],
+    coverPosition: "center",
+    hasAlbum: false,
+    photos: [
+      { src: "/pictures/Panning (1).jpg" },
+    ],
   },
   {
     slug: "mias-26",
@@ -95,10 +143,12 @@ const albums = [
     location: "",
     category: "cars",
     cover: "/pictures/MIAS '26 (1).JPG",
+    coverPosition: "center",
+    hasAlbum: false,
     photos: [
-      "/pictures/MIAS '26 (1).JPG",
-      "/pictures/MIAS '26 (3).jpg",
-      "/pictures/MIAS '26 (11).JPG",
+      { src: "/pictures/MIAS '26 (1).JPG" },
+      { src: "/pictures/MIAS '26 (3).jpg" },
+      { src: "/pictures/MIAS '26 (11).JPG" },
     ],
   },
 ];
