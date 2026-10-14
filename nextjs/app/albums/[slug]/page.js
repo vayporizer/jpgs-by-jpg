@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, use } from 'react';
+import { useState, use, useEffect} from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import albums from '../../../data/albums';
@@ -11,8 +11,20 @@ export default function AlbumPage({ params }) {
   const [lightbox, setLightbox] = useState(null);
 
   if (!album) notFound();
+  const photos = album.photos.filter(p => !p.galleryOnly);
 
- const photos = album.photos.filter(p => !p.galleryOnly);
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (lightbox === null) return;
+      if (e.key === 'ArrowRight') nextPhoto();
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'Escape') closeLightbox();
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightbox]);
+
 
   function openLightbox(index) {
     setLightbox(index);
