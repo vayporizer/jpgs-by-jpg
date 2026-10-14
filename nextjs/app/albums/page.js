@@ -2,7 +2,7 @@ import Link from 'next/link';
 import albums from '../../data/albums';
 
 export const metadata = {
-  title: "Albums — JPGs by JPG",
+  title: "Albums - JPGs by JPG",
   description: "Full event albums by Juan Paolo Gines",
 };
 
@@ -27,7 +27,7 @@ export default function AlbumsPage() {
         <div className="hero-bg"></div>
         <h4>JPGS BY JPG</h4>
         <div className="hero-content-wrap">
-          <h1>Event <i>Albums.</i></h1>
+          <h1>Photo <i>Albums.</i></h1>
           <p>The full story behind every event, start to finish.</p>
         </div>
       </section>

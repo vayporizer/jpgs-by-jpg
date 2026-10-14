@@ -70,9 +70,9 @@ const albums = [
     coverPosition: "center",
     hasAlbum: true,
     photos: [
-      { src: "/pictures/Reese at 18 (1).JPG" },
+      // { src: "/pictures/Reese at 18 (1).JPG" },
       { src: "/pictures/Reese at 18 (3).JPG" },
-      { src: "/pictures/Reese at 18 (5).JPG" },
+      // { src: "/pictures/Reese at 18 (5).JPG" },
       { src: "/pictures/Reese at 18 (6).JPG" },
       { src: "/pictures/Reese at 18 (8).JPG" },
       { src: "/pictures/Reese at 18 (9).JPG" },

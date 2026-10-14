@@ -613,3 +613,132 @@ footer {
   #albums-index { padding: 0 1.5rem 4rem; }
   #albums-hero { padding: 0 1.5rem 3rem; }
 }
+
+/* ── INDIVIDUAL ALBUM PAGE ── */
+#album-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 3rem 3rem;
+}
+
+.album-hero-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.album-hero-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.album-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(14, 14, 14, 0.6) 50%,
+    rgba(14, 14, 14, 0.2) 100%
+  );
+}
+
+.album-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.album-back {
+  display: inline-block;
+  font-family: var(--mono-font);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--muted-color);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+
+.album-back:hover {
+  color: var(--accent-color);
+}
+
+#album-hero h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#album-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.album-meta-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.album-meta-item {
+  font-family: var(--mono-font);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--muted-color);
+}
+
+.album-meta-item::before {
+  content: '— ';
+  color: var(--accent-color);
+}
+
+#album-grid {
+  padding: 3rem 3rem 5rem;
+}
+
+/* ── LIGHTBOX ARROWS & COUNTER ── */
+.lb-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: border-color 0.2s, color 0.2s;
+  z-index: 501;
+}
+
+.lb-arrow:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.lb-arrow-left { left: 2rem; }
+.lb-arrow-right { right: 2rem; }
+
+#lightbox-counter {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono-font);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--muted-color);
+}
+
+@media (max-width: 560px) {
+  #album-hero { padding: 0 1.5rem 2rem; }
+  #album-grid { padding: 2rem 1.5rem 4rem; }
+  .lb-arrow { display: none; }
+}
