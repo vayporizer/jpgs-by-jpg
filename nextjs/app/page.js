@@ -277,8 +277,7 @@ export default function Home() {
             onClick={e => e.stopPropagation()}
           />
           <div id="lightbox-caption">
-            <span id="lb-name">{lightbox.name}</span>
-            <span id="lb-meta">{lightbox.meta}</span>
+            <span id="lb-meta">{lightbox.name} | {lightbox.meta}</span>
           </div>
         </div>
       )}
