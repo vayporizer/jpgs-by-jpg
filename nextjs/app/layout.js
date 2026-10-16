@@ -15,7 +15,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata = {
-  title: "JPGs by JPG",
+  title: "JPGs by JPG | Photography by Paolo Gines",
   description: "Event photography by Juan Paolo Gines",
 };
 

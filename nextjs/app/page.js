@@ -17,7 +17,7 @@ const galleryEvents = [
     category: 'org-events',
     name: 'RecWeek 2026',
     meta: 'Org Event · June 2026',
-    photos: [1, 2, 3, 4].map(n => `/pictures/RecWeek 26 (${n}).jpg`),
+    photos: [2, 1, 3, 4].map(n => `/pictures/RecWeek 26 (${n}).jpg`),
   },
   {
     category: 'portraits',
@@ -29,7 +29,7 @@ const galleryEvents = [
     category: 'concerts',
     name: 'Ateneo Blue Rose 2026',
     meta: 'Concerts · June 2026',
-    photos: [3, 5, 7, 8].map(n => `/pictures/Blue Rose 26 (${n}).jpg`),
+    photos: [8, 3, 5, 7].map(n => `/pictures/Blue Rose 26 (${n}).jpg`),
   },
   {
     category: 'concerts',
@@ -225,20 +225,32 @@ export default function Home() {
             My dad has been a photographer for as long as I've known him,
             and he'd never let a moment or a memory pass without at least
             one photo to commemorate and look back on. It only took one
-            gig for that same passion to ignite in me.
+            gig for that same passion to ignite in me, and now I hope to
+            have that same effect on others!
           </p>
           <p>
-            Through different settings, I've realized I find fulfilment in
-            being the one responsible for making sure people have something
-            to look back on. I've found that I thrive when capturing moments
-            and emotions in their rawest form. I love that people can just be
-            themselves knowing that I'll be there to document it.
+            I find fulfilment in being the one responsible for making sure 
+            people have something to look back on. I love that people can 
+            just be themselves knowing that I'll be there to document it, 
+            and I hope that whenever you find yourself in front of my camera, 
+            you get to see your true self and all the emotions that come
+            with it!
           </p>
-          <h4>ORG EXPERIENCE</h4>
+          <h4>EXPERIENCE</h4>
+          <div className="org-experience-list">
+            <span className="org-exp">EVENTS</span>
+            <span className="org-exp">PORTRAIT</span>
+            <span className="org-exp">CONCERTS</span>
+            <span className="org-exp">LANDSCAPES</span>
+            <span className="org-exp">SPORTS</span>
+            <span className="org-exp">ORG EVENTS</span>
+            <span className="org-exp">CARS</span>
+          </div>
+          <h4>POSITIONS HELD</h4>
           <div className="org-experience-list">
             <span className="org-exp">COA-M Associate Vice President for Documentations 2026-2027</span>
-            <span className="org-exp">COA-M RecWeek 2026 Documentations Head</span>
-            <span className="org-exp">COA-M IOSF 2026 and LEADCon 2026 Documentations Head</span>
+            <span className="org-exp">3x COA-M Documentations Head</span>
+            <span className="org-exp">5x Documentations Member for Org Projects</span>
           </div>
         </div>
       </section>
