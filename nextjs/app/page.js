@@ -8,6 +8,12 @@ import albums from '../data/albums';
 // ── Gallery data for the main page (crème de la crème) ────────
 const galleryEvents = [
   {
+    category: 'landscapes',
+    name: 'Katipunan in Slow Shutter',
+    meta: 'Landscapes · October 2026',
+    photos: ['/pictures/JPG_6670-5.jpg'],
+  },
+  {
     category: 'org-events',
     name: 'RecWeek 2026',
     meta: 'Org Event · June 2026',
@@ -43,6 +49,18 @@ const galleryEvents = [
     photos: [3, 6, 8, 9, 10].map(n => `/pictures/Reese at 18 (${n}).JPG`),
   },
   {
+    category: 'portraits',
+    name: "RecWeek '26 DP Shoots",
+    meta: 'Portraits · August 2026',
+    photos: ['/pictures/RecWeek DPs (2).jpg'],
+  },
+  {
+    category: 'landscapes',
+    name: 'Katipunan in Slow Shutter',
+    meta: 'Landscapes · October 2026',
+    photos: ['/pictures/JPG_6637-2.jpg'],
+  },
+  {
     category: 'sports',
     name: 'COA-M InterOrg Sportsfest',
     meta: 'Sports · Feb-Mar 2026',
@@ -54,6 +72,12 @@ const galleryEvents = [
     name: 'COA-M LEADCon',
     meta: 'Org Event · Mar 2026',
     photos: [14, 17].map(n => `/pictures/COA-M LEADcon (${n}).jpg`),
+  },
+  {
+    category: 'portraits',
+    name: "RecWeek '26 DP Shoots",
+    meta: 'Portraits · August 2026',
+    photos: ['/pictures/RecWeek DPs (1).jpg'],
   },
   {
     category: 'org-events',
@@ -79,7 +103,7 @@ const galleryEvents = [
   },
 ];
 
-const filters = ['all', 'portraits', 'concerts', 'events', 'sports', 'org-events', 'cars'];
+const filters = ['all', 'portraits', 'concerts', 'events', 'sports', 'org-events', 'cars', 'landscapes'];
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('all');
