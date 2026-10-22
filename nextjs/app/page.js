@@ -108,7 +108,7 @@ const filters = ['all', 'portraits', 'concerts', 'events', 'sports', 'org-events
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [lightbox, setLightbox] = useState(null);
-  const [emailLabel, setEmailLabel] = useState('paogines.photos@gmail.com');
+  const [emailLabel, setEmailLabel] = useState('jpgsbyjpg@gmail.com');
 
   // ── Filter logic ─────────────────────────────────────────────
   const filtered = activeFilter === 'all'
@@ -125,9 +125,9 @@ export default function Home() {
 
   // ── Copy email ───────────────────────────────────────────────
   function copyEmail() {
-    navigator.clipboard.writeText('paogines.photos@gmail.com');
+    navigator.clipboard.writeText('jpgsbyjpg@gmail.com');
     setEmailLabel('Copied!');
-    setTimeout(() => setEmailLabel('paogines.photos@gmail.com'), 2000);
+    setTimeout(() => setEmailLabel('jpgsbyjpg@gmail.com'), 2000);
   }
 
   return (
